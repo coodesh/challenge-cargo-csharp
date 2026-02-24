@@ -13,7 +13,7 @@ O candidato recebe o projeto com estrutura pronta e precisa completar, corrigir 
 - Oracle (PL/SQL) - simulado via scripts SQL fornecidos
 - Docker
 
-## O que o candidato recebe
+## Conteudo do repositorio
 
 - Projeto .NET com solution configurada
 - 2-3 endpoints ja implementados (com bugs intencionais)
@@ -48,9 +48,3 @@ O candidato recebe o projeto com estrutura pronta e precisa completar, corrigir 
 
 Avancado (Senior)
 
-## Pontos fortes desta ideia
-
-- Contexto portuario alinhado com o cliente (Supero)
-- Avalia proficiencia pratica, nao so logica
-- Mistura de implementacao nova + debugging
-- Cobre todas as habilidades principais e secundarias da vaga
