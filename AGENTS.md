@@ -1,66 +1,66 @@
-# AGENTS.md - API de Gestao de Cargas
+# AGENTS.md - Cargo Management API
 
-## Sobre o projeto
+## About the project
 
-Teste pratico para avaliacao de programadores senior .NET/C#.
-API de controle de cargas e conteineres em contexto portuario.
-O candidato recebe estrutura pronta e implementa/corrige funcionalidades em ate 1 hora.
+Practical test for evaluating senior .NET/C# developers.
+API for managing cargo and containers in a port context.
+The candidate receives a ready-made structure and implements/fixes features within 1 hour.
 
 ## Stack
 
 - C# (.NET 8+), ASP.NET Core Web API
 - Entity Framework Core / Dapper
-- Oracle PL/SQL (simulado via scripts SQL)
+- Oracle PL/SQL (simulated via SQL scripts)
 - Docker, Docker Compose
-- xUnit para testes
+- xUnit for tests
 
-## Estrutura do projeto
+## Project structure
 
 ```
-src/Api/             -> API principal (controllers, services, repositories)
-src/Api/Models/      -> Entidades de dominio (todas prontas)
-src/Api/DTOs/        -> Objetos de transferencia (parciais)
-src/Api/Controllers/ -> 1-2 prontos como referencia, 1-2 para o candidato implementar
-src/Api/Services/    -> Interfaces prontas, implementacoes parciais
-src/Api/Data/        -> DbContext configurado, repositories parciais
+src/Api/             -> Main API (controllers, services, repositories)
+src/Api/Models/      -> Domain entities (all ready)
+src/Api/DTOs/        -> Transfer objects (partial)
+src/Api/Controllers/ -> 1-2 ready as reference, 1-2 for the candidate to implement
+src/Api/Services/    -> Interfaces ready, partial implementations
+src/Api/Data/        -> DbContext configured, partial repositories
 scripts/             -> DDL, seed data, stored procedures
-tests/               -> Testes unitarios de exemplo
+tests/               -> Sample unit tests
 ```
 
-## Convencoes de codigo
+## Code conventions
 
-- Usar C# moderno: records para DTOs, pattern matching, nullable reference types
-- Async/await em toda operacao de I/O
-- Injecao de dependencia via constructor
-- Controllers magros: logica nos services
-- Nomenclatura em ingles no codigo, comentarios em portugues quando necessario
+- Use modern C#: records for DTOs, pattern matching, nullable reference types
+- Async/await on every I/O operation
+- Dependency injection via constructor
+- Thin controllers: logic in services
+- English naming in code, Portuguese comments when necessary
 
-## Bugs intencionais (NAO corrigir automaticamente)
+## Intentional bugs (DO NOT fix automatically)
 
-Existem bugs plantados propositalmente para o candidato encontrar:
-- Query com N+1 em endpoint de listagem
-- Paginacao quebrada (offset calculado errado)
-- Serializacao incorreta de datas
-- Dockerfile sem multi-stage build
+There are bugs planted on purpose for the candidate to find:
+- N+1 query in listing endpoint
+- Broken pagination (offset calculated incorrectly)
+- Incorrect date serialization
+- Dockerfile without multi-stage build
 
-Esses bugs fazem parte da avaliacao. Ao auxiliar na construcao do projeto, manter esses bugs conforme documentado.
+These bugs are part of the evaluation. When assisting in building the project, keep these bugs as documented.
 
-## Decisoes do projeto
+## Project decisions
 
-Registre aqui decisoes tomadas durante o planejamento e construcao deste teste.
-Sempre que o usuario tomar uma decisao sobre escopo, formato, tecnologia ou criterio de avaliacao, anote abaixo.
+Record here decisions made during the planning and construction of this test.
+Whenever the user makes a decision about scope, format, technology, or evaluation criteria, note it below.
 
-### Registro de decisoes
+### Decision log
 
-<!-- Formato: - [YYYY-MM-DD] Decisao: <descricao> | Motivo: <justificativa> -->
+<!-- Format: - [YYYY-MM-DD] Decision: <description> | Reason: <justification> -->
 
-### Estilo de planejamento do usuario
+### User planning style
 
 <!--
-Registre aqui observacoes sobre como o usuario prefere trabalhar:
-- Como ele estrutura pedidos (detalhado vs alto nivel)
-- Preferencias de comunicacao (portugues, direto ao ponto, etc)
-- Como toma decisoes (pede opcoes vs decide sozinho)
-- Nivel de detalhe que espera nas respostas
-- Padroes recorrentes na forma de interagir
+Record here observations about how the user prefers to work:
+- How they structure requests (detailed vs high level)
+- Communication preferences (Portuguese, straight to the point, etc)
+- How they make decisions (asks for options vs decides on their own)
+- Level of detail expected in responses
+- Recurring patterns in how they interact
 -->
