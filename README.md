@@ -1,50 +1,49 @@
-# 01 - API de Gestao de Cargas
+# 01 - Cargo Management API
 
-## Contexto
+## Context
 
-API parcialmente implementada para controle de cargas e conteineres em ambiente portuario.
-O candidato recebe o projeto com estrutura pronta e precisa completar, corrigir e melhorar.
+A partially implemented API for managing cargo and containers in a port environment.
+The candidate receives the project with a ready-made structure and must complete, fix, and improve it.
 
 ## Stack
 
 - C# (.NET 8+)
-- ASP.NET Core (Minimal API ou Controllers)
+- ASP.NET Core (Minimal API or Controllers)
 - Entity Framework Core / Dapper
-- Oracle (PL/SQL) - simulado via scripts SQL fornecidos
+- Oracle (PL/SQL) - simulated via provided SQL scripts
 - Docker
 
-## Conteudo do repositorio
+## Repository Contents
 
-- Projeto .NET com solution configurada
-- 2-3 endpoints ja implementados (com bugs intencionais)
-- Model/entities definidos
-- Script SQL com tabelas e stored procedure
-- Dockerfile incompleto ou com erros
-- README com instrucoes do desafio
+- .NET project with a configured solution
+- 2-3 endpoints already implemented (with intentional bugs)
+- Models/entities defined
+- SQL script with tables and stored procedure
+- Incomplete or broken Dockerfile
+- README with challenge instructions
 
-## Tarefas do candidato
+## Candidate Tasks
 
-1. **Implementar endpoints faltantes** - CRUD de manifesto de carga (POST, GET by ID, GET paginado, PUT, DELETE)
-2. **Corrigir bugs intencionais** - Query com N+1, paginacao quebrada, serializacao incorreta
-3. **Middleware de validacao** - Adicionar tratamento global de erros e validacao de input
-4. **Docker** - Corrigir/completar o Dockerfile para que a aplicacao suba corretamente
-5. **PL/SQL** - Implementar endpoint que chama stored procedure Oracle (consulta de cargas por periodo)
+1. **Implement missing endpoints** - Cargo manifest CRUD (POST, GET by ID, paginated GET, PUT, DELETE)
+2. **Fix intentional bugs** - N+1 query, broken pagination, incorrect serialization
+3. **Validation middleware** - Add global error handling and input validation
+4. **Docker** - Fix/complete the Dockerfile so the application starts correctly
+5. **PL/SQL** - Implement an endpoint that calls an Oracle stored procedure (cargo lookup by date range)
 
-## Criterios de avaliacao
+## Evaluation Criteria
 
-| Criterio | Peso | O que observar |
+| Criterion | Weight | What to look for |
 |---|---|---|
-| API REST | 25% | Verbos HTTP corretos, status codes, paginacao, versionamento |
-| C# moderno | 25% | Records, pattern matching, nullable reference types, async/await |
-| SQL/PL/SQL | 15% | Query correta, uso de parametros, chamada de stored procedure |
-| Docker | 15% | Multi-stage build, imagem otimizada, .dockerignore |
-| Qualidade | 20% | Tratamento de erros, validacao, organizacao de codigo |
+| REST API | 25% | Correct HTTP verbs, status codes, pagination, versioning |
+| Modern C# | 25% | Records, pattern matching, nullable reference types, async/await |
+| SQL/PL/SQL | 15% | Correct query, parameterized queries, stored procedure invocation |
+| Docker | 15% | Multi-stage build, optimized image, .dockerignore |
+| Quality | 20% | Error handling, validation, code organization |
 
-## Tempo estimado
+## Estimated Time
 
-- 45-60 minutos
+- 45-60 minutes
 
-## Nivel de dificuldade
+## Difficulty Level
 
-Avancado (Senior)
-
+Advanced (Senior)
