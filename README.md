@@ -29,21 +29,3 @@ The candidate receives the project with a ready-made structure and must complete
 3. **Validation middleware** - Add global error handling and input validation
 4. **Docker** - Fix/complete the Dockerfile so the application starts correctly
 5. **PL/SQL** - Implement an endpoint that calls an Oracle stored procedure (cargo lookup by date range)
-
-## Evaluation Criteria
-
-| Criterion | Weight | What to look for |
-|---|---|---|
-| REST API | 25% | Correct HTTP verbs, status codes, pagination, versioning |
-| Modern C# | 25% | Records, pattern matching, nullable reference types, async/await |
-| SQL/PL/SQL | 15% | Correct query, parameterized queries, stored procedure invocation |
-| Docker | 15% | Multi-stage build, optimized image, .dockerignore |
-| Quality | 20% | Error handling, validation, code organization |
-
-## Estimated Time
-
-- 45-60 minutes
-
-## Difficulty Level
-
-Advanced (Senior)
